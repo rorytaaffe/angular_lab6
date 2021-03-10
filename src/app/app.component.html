@@ -1,9 +1,15 @@
 <h2>Student App</h2>
 
-<ol>
+<ul>
   <li *ngFor="let students of students">{{students.id}}, {{students.name}}, {{students.address}}</li>
-</ol>
+</ul>
 
 <h2>Weather</h2>
 
-{{weather[0].main}}, {{weather[0].description}}
+
+<ul>
+  <li *ngFor="let w of weather">{{w.main}}, {{w.description}}</li>
+</ul>
+
+<!-- The above way looks better and it's better coding practice -->
+<!-- {{weather[0].main}}, {{weather[0].description}} -->
